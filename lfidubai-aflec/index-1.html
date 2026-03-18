@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-US">
+
 <head>
   <title>Abdeljalil NACEUR</title>
   <meta charset="UTF-8">
@@ -68,13 +69,20 @@
     #loader img {
       width: 120px;
       margin-bottom: 20px;
-      filter: drop-shadow(0 0 15px rgba(0,255,255,0.7));
+      filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.7));
       animation: logoGlow 2s ease-in-out infinite alternate;
     }
 
     @keyframes logoGlow {
-      0% { opacity: 0.6; transform: scale(0.98); }
-      100% { opacity: 1; transform: scale(1.02); }
+      0% {
+        opacity: 0.6;
+        transform: scale(0.98);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1.02);
+      }
     }
 
     .orb {
@@ -82,8 +90,8 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(0,255,255,0.3), rgba(0,255,255,0.05));
-      box-shadow: 0 0 25px var(--color-accent), inset 0 0 20px rgba(0,255,255,0.3);
+      background: radial-gradient(circle, rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.05));
+      box-shadow: 0 0 25px var(--color-accent), inset 0 0 20px rgba(0, 255, 255, 0.3);
       animation: spinOrb 2s linear infinite;
     }
 
@@ -91,7 +99,7 @@
       position: absolute;
       width: 120px;
       height: 120px;
-      border: 2px solid rgba(0,255,255,0.4);
+      border: 2px solid rgba(0, 255, 255, 0.4);
       border-radius: 50%;
       top: 50%;
       left: 50%;
@@ -113,13 +121,23 @@
     }
 
     @keyframes spinOrb {
-      0% { transform: rotateY(0deg) rotateX(0deg); }
-      100% { transform: rotateY(360deg) rotateX(360deg); }
+      0% {
+        transform: rotateY(0deg) rotateX(0deg);
+      }
+
+      100% {
+        transform: rotateY(360deg) rotateX(360deg);
+      }
     }
 
     @keyframes rotateRing {
-      from { transform: translate(-50%, -50%) rotate(0deg); }
-      to { transform: translate(-50%, -50%) rotate(360deg); }
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
     }
 
     .loading-text {
@@ -131,14 +149,19 @@
     }
 
     @keyframes flicker {
-      0% { opacity: 0.5; }
-      100% { opacity: 1; }
+      0% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
     .progress-bar {
       width: 180px;
       height: 8px;
-      background: rgba(0,255,255,0.1);
+      background: rgba(0, 255, 255, 0.1);
       border-radius: 10px;
       margin-top: 16px;
       overflow: hidden;
@@ -152,7 +175,9 @@
     }
 
     @keyframes fillBar {
-      to { width: 100%; }
+      to {
+        width: 100%;
+      }
     }
 
     .fade-out {
@@ -163,7 +188,7 @@
 
     /* ========= HEADER ========= */
     .header {
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(0, 0, 0, 0.7);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -207,7 +232,7 @@
       height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid rgba(255,255,255,0.15);
+      border: 2px solid rgba(255, 255, 255, 0.15);
       margin: 0 auto 1.25rem;
     }
 
@@ -255,7 +280,8 @@
       text-align: center;
     }
 
-    .contact-item a, .contact-item p {
+    .contact-item a,
+    .contact-item p {
       font-size: clamp(0.95rem, 1.6vw, 1.05rem);
       font-weight: 500;
       color: var(--color-text);
@@ -285,6 +311,7 @@
       main {
         padding: 1.25rem;
       }
+
       .avatar {
         width: 120px;
         height: 120px;
@@ -296,7 +323,7 @@
 <body>
   <!-- GAMIFIED LOADER -->
   <div id="loader">
-    <img src="./42ad.png" alt="42 Abu Dhabi Logo">
+    <img src="./42lfi.png" alt="42 Abu Dhabi Logo">
     <div class="orb"></div>
     <div class="ring"></div>
     <!-- <div class="loading-text" id="loadingText">Booting System...</div> -->
@@ -306,7 +333,7 @@
   <!-- HEADER -->
   <!-- <header class="header">
     <a href="https://42abudhabi.ae">
-      <img src="./42ad.png" alt="42 Abu Dhabi Logo">
+      <img src="./42lfi.png" alt="42 Abu Dhabi Logo">
     </a>
   </header> -->
 
@@ -318,11 +345,18 @@
       <div class="bio">Chief Technology and Pedagogy Officer</div>
 
       <section class="contact-info-section">
-        <div class="contact-item"><i class="fas fa-phone-alt"></i><p>+971544110246</p></div>
-        <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:abdeljalil@42abudhabi.ae">abdeljalil@42abudhabi.ae</a></div>
-        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>Abu Dhabi, UAE</p></div>
-        <div class="contact-item"><i class="fas fa-globe"></i><a href="https://42abudhabi.ae" target="_blank">42abudhabi.ae</a></div>
-        <div class="contact-item"><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/abdeljalil-naceur-837113184/" target="_blank">LinkedIn</a></div>
+        <div class="contact-item"><i class="fas fa-phone-alt"></i>
+          <p>+971544110246</p>
+        </div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><a
+            href="mailto:abdeljalil@42abudhabi.ae">abdeljalil@42abudhabi.ae</a></div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
+          <p>Abu Dhabi, UAE</p>
+        </div>
+        <div class="contact-item"><i class="fas fa-globe"></i><a href="https://42abudhabi.ae"
+            target="_blank">42abudhabi.ae</a></div>
+        <div class="contact-item"><i class="fab fa-linkedin"></i><a
+            href="https://www.linkedin.com/in/abdeljalil-naceur-837113184/" target="_blank">LinkedIn</a></div>
       </section>
 
       <a class="btn-download" href="#" onclick="saveContact()">
@@ -378,4 +412,5 @@
     }
   </script>
 </body>
+
 </html>
